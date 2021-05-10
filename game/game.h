@@ -84,6 +84,8 @@ char showMouseDuringPlayback();
 char *getHashSalt();
 
 
+void hetuwSetViewSize();
+
 
 // name of custom font TGA file to find in "graphics" folder
 const char *getFontTGAFileName();
@@ -166,6 +168,8 @@ char isLastMouseButtonRight();
 // FOVMOD NOTE:  Change 2/2 - Take these lines during the merge process
 int getLastMouseButton();
 
+// hetuw mod - inspired by https://github.com/Awbz/minorGems/commit/94911116df3ed21e525d9f4c67d4fffbee70f3ff
+HetuwMouseActionBuffer* hetuwGetMouseActionBuffer();
 
 
 void keyDown( unsigned char inASCII );
